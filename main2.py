@@ -75,11 +75,11 @@ app = FastAPI()
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
-uri = "mongodb+srv://root:1234@mongodblogin.pcv1to3.mongodb.net/SignUp"
+uri = "mongodb+srv://admin:admin123@cluster0.ksvd0uq.mongodb.net/"
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi("1"))
-db = client["SignUp"]
-collection = db["users"]
+db = client["DB"]
+collection = db["Reactpy"]
 # Send a ping to confirm a successful connection
 try:
     client.admin.command("ping")
